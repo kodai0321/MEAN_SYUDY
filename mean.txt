@@ -1,0 +1,77 @@
+MEANアーキテクチャ
+
+■技術要素
+・DB
+   MongoDB
+・App
+   Node.js
+   SocketIO
+   express.js
+   Angular.js
+   YEOMANジェネレータ
+    https://github.com/angular-fullstack/generator-angular-fullstack
+
+・その他
+　 ionic
+
+■できるようになりたいこと
+・環境構築
+・一つのコードで下記を作成
+   WEBアプリ
+　 iPhoneアプリ
+　 Androidアプリ
+
+■習得順番
+
+
+
+■準備
+・gitインストール
+	sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+	sudo yum install git
+・node.jsとnpmとnvmインストール
+　　　　http://qiita.com/nki2/items/9a15eb151a9e389af318
+・mongoDBインストール
+	sudo vi /etc/yum.repos.d/mongodb.repo
+		[mongodb]
+		name=MongoDB Repository
+		baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/
+		gpgcheck=0
+		enabled=1
+	yum install mongodb-org	
+	sudo mkdir db
+	sudo mongod --dbpath db/
+・MEAN環境構築
+     　 http://mean.io/#!/
+	npm install -g gulp
+	npm install -g mean-cli
+	mean init yourNewApp
+	user:kodai
+	PW:03210321ko
+
+・アプリ構築
+	cd yourNewApp
+	npm install -g snyk
+	npm install bower -g
+	npm install patch -g
+	npm install
+
+	Install node package dependencies:
+    		cd first_00 && npm install
+  	Bower install should be triggered for client side dependencies.
+  	If it did not run invoke it manually...
+    		cd first_00 && bower install
+  	Run the app by running:
+    		cd first_00 and then run..
+    		gulp
+
+・EXPRESS 
+　 sudo npm install express-generator -g
+   express ricemaaaaaan
+   cd ricemaaaaaan
+   sudo npm install
+   node ./bin/www
+
+・手動
+http://blog.edenmsg.com/angular2-typescript-gulp-and-expressjs/
+
