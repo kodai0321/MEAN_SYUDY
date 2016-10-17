@@ -32,7 +32,7 @@ MEANアーキテクチャ
 ・node.jsとnpmとnvmインストール
 　　　　http://qiita.com/nki2/items/9a15eb151a9e389af318
 ・mongoDBインストール
-	sudo vi /etc/yum.repos.d/mongodb.repo
+	sudo vim /etc/yum.repos.d/mongodb.repo
 		[mongodb]
 		name=MongoDB Repository
 		baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/
@@ -40,7 +40,9 @@ MEANアーキテクチャ
 		enabled=1
 	yum install mongodb-org	
 	sudo mkdir db
-	sudo mongod --dbpath db/
+	cd db
+	sudo mongod 
+	sudo service mongod start 
 ・MEAN環境構築
      　 http://mean.io/#!/
 	npm install -g gulp
@@ -72,6 +74,8 @@ MEANアーキテクチャ
    sudo npm install
    node ./bin/www
 
+
+
 ・手動
 http://blog.edenmsg.com/angular2-typescript-gulp-and-expressjs/
 
@@ -79,3 +83,6 @@ http://blog.edenmsg.com/angular2-typescript-gulp-and-expressjs/
 ・これいいかも
 http://paiza.hatenablog.com/entry/2015/07/08/最新・最速！Webサービスが今すぐ作れる！_-_MEANスタッ
 
+
+・Angular2 tutrial
+http://blog.yuhiisk.com/archive/2016/09/26/new-angular2-quickstart-japanese-for-typescript.html
